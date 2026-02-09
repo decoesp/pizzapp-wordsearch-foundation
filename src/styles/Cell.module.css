@@ -1,0 +1,45 @@
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  font-size: clamp(0.875rem, 2vw, 1.25rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.cell:hover:not(.disabled) {
+  background-color: var(--color-background);
+  transform: scale(1.05);
+}
+
+.selected {
+  background-color: var(--color-selection);
+  border-color: var(--color-primary);
+  transform: scale(1.05);
+}
+
+.found {
+  background-color: var(--color-success-light);
+  border-color: var(--color-success);
+  color: var(--color-success);
+}
+
+.solution {
+  background-color: var(--color-solution);
+  border-color: var(--color-warning);
+}
+
+.disabled {
+  cursor: default;
+}
+
+.disabled:hover {
+  transform: none;
+}
