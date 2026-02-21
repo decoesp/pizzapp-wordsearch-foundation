@@ -2,6 +2,15 @@
   width: 100%;
 }
 
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
 .loading,
 .error {
   display: flex;

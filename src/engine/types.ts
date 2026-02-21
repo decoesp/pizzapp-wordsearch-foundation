@@ -47,3 +47,16 @@ export type PuzzleState = {
   difficulty: Difficulty;
   theme: string;
 };
+
+export type RankingEntry = {
+  playerName: string;
+  timeInSeconds: number;
+  difficulty: Difficulty;
+  date: string;
+  usedHint: boolean;
+};
+
+export type RankingData = {
+  daily: RankingEntry[];
+  weekly: RankingEntry[];
+};
